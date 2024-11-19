@@ -4,7 +4,9 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <header className="header">
-      <a href="" className="logo">Audi</a>
+      <button className="logo-btn">
+        <img src="/simbolo_audi-removebg-preview.png" alt="Audi" className="logo-img" />
+      </button>
 
       <nav className="navbar">
         <a href="/">Página Inicial</a>

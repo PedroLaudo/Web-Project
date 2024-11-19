@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000; /* Cor preta para o logo */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 10px; /* Reduz a distância entre os links */
+  }
+  
+  .navbar a {
+    color: #000; /* Cor preta para os links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1rem;
+    padding: 5px 0; /* Espaçamento interno em cima e embaixo */
+    border-bottom: 2px solid transparent; /* Traço inicial invisível */
+    transition: border-color 0.3s, color 0.3s; /* Efeito suave */
+    margin-right: 250px;
+    
+  }
+  
+  .navbar a:hover {
+    border-bottom: 2px solid #000; /* Mostra o traço ao passar o mouse */
+  }
+
+  .logo-img {
+    width: 80px; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção do logotipo */
+    width: 80px; /* Ajuste o tamanho do logo */
+    border: none; /* Remove qualquer borda da imagem */
+  }
+  
+  .logo-btn {
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda */
+    padding: 0; /* Remove o preenchimento */
+    cursor: pointer; /* Indica que é clicável */
+    display: inline-flex; /* Garante que o botão se comporte como um link */
+  }
