@@ -10,40 +10,40 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #000; /* Cor preta para o logo */
+    color: #000; 
   }
   
   .navbar {
     display: flex;
-    gap: 10px; /* Reduz a distância entre os links */
+    gap: 10px; 
   }
   
   .navbar a {
-    color: #000; /* Cor preta para os links */
-    text-decoration: none; /* Remove sublinhado */
+    color: #000; 
+    text-decoration: none; 
     font-size: 1rem;
-    padding: 5px 0; /* Espaçamento interno em cima e embaixo */
-    border-bottom: 2px solid transparent; /* Traço inicial invisível */
-    transition: border-color 0.3s, color 0.3s; /* Efeito suave */
+    padding: 5px 0; 
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s; 
     margin-right: 250px;
     
   }
   
   .navbar a:hover {
-    border-bottom: 2px solid #000; /* Mostra o traço ao passar o mouse */
+    border-bottom: 2px solid #000; 
   }
 
   .logo-img {
-    width: 80px; /* Ajuste para o tamanho desejado */
-    height: auto; /* Mantém a proporção do logotipo */
-    width: 80px; /* Ajuste o tamanho do logo */
-    border: none; /* Remove qualquer borda da imagem */
+    width: 80px; 
+    height: auto; 
+    width: 80px; 
+    border: none; 
   }
   
   .logo-btn {
-    background: none; /* Remove o fundo padrão do botão */
-    border: none; /* Remove a borda */
-    padding: 0; /* Remove o preenchimento */
-    cursor: pointer; /* Indica que é clicável */
-    display: inline-flex; /* Garante que o botão se comporte como um link */
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    display: inline-flex; 
   }
