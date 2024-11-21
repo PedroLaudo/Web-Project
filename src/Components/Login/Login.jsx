@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';  // Importa o useNavigate
-import 'Login.css'
+import './Login.css'
 
 const Login = () => {
     const [utilizador, setUtilizador] = useState('');
@@ -46,7 +46,7 @@ const Login = () => {
                 <h2>Login</h2>
                 {error && <p className="error">{error}</p>}
                 <div className="input-group">
-                    <label htmlFor="utilizador">Usuário:</label>
+                    <label htmlFor="utilizador">Utilizador:</label>
                     <input
                         type="text"
                         id="utilizador"
