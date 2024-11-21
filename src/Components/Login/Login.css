@@ -11,12 +11,15 @@ body {
 }
 
 .login-container {
-    width: 100%;
+    /*width: 100%;
     max-width: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    width: 420px;
+    background: slateblue;
+    color: #fff;
 }
 
 .login-form h2 {
@@ -63,3 +66,5 @@ button:hover {
     text-align: center;
     margin-bottom: 10px;
 }
+
+
