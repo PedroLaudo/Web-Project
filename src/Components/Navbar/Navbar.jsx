@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <>
       <header className="header">
-        <button className="logo-btn">
+        <a className="logo-btn">
           <img src="/simbolo_audi-removebg-preview.png" alt="Audi" className="logo-img" />
-        </button>
+        </a>
 
         <nav className="navbar">
           <a href="/inicial">Página Inicial</a>

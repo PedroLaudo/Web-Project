@@ -1,52 +1,70 @@
+/* Header */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Coloca a logo à esquerda e a navbar à direita */
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 20px;
   background-color: #f8f8f8;
+  position: fixed; /* Fixa o cabeçalho no topo */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que o header fique sobre o conteúdo */
 }
 
+/* Logo */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #000; 
+  color: #000;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
-  gap: 10px; 
+  gap: 20px; /* Espaçamento entre os botões */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  position: absolute; /* Posiciona a navbar no topo direito */
+  right: 20px; /* Ajusta a distância da navbar do lado direito */
+  top: 50%; /* Posiciona a navbar verticalmente ao centro */
+  transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
 }
 
 .navbar button {
-  color: #000; 
-  text-decoration: none; 
+  color: #000;
+  text-decoration: none;
   font-size: 1rem;
-  padding: 5px 0; 
+  padding: 5px 15px;
   border-bottom: 2px solid transparent;
-  transition: border-color 0.3s, color 0.3s; 
-  margin-right: 250px;
-  background: none; 
-  border: none; 
-  cursor: pointer; 
-  outline: none; 
+  transition: border-color 0.3s, color 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .navbar button:hover {
-  border-bottom: 2px solid #000; 
+  border-bottom: 2px solid #000;
 }
 
+/* Logo com imagem */
 .logo-img {
-  width: 80px; 
-  height: auto; 
-  border: none; 
+  width: 80px;
+  height: auto;
+  border: none;
 }
 
 .logo-btn {
-  background: none; 
-  border: none; 
-  padding: 0; 
-  cursor: pointer; 
-  display: inline-flex; 
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
 }
 
+/* Ajuste para o conteúdo abaixo da navbar */
+body {
+  padding-top: 80px; /* Ajuste para não sobrepor o conteúdo ao header */
+  margin: 0;
+}
