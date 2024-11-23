@@ -1,18 +1,24 @@
-/* login.css */
+/* Impede a rolagem na página */
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+/* Estilo para o body */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
-    background-color: #f0f0f0; /* Cor de fundo para contraste */
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
+/* Estilo do container de login */
 .login-container {
     width: 100%;
-    max-width: 400px; /* Limita a largura máxima do container */
+    max-width: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -20,7 +26,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo dentro do container */
+    align-items: center;
 }
 
 /* Formatação do título */
@@ -48,7 +54,7 @@ body {
     font-size: 16px;
 }
 
-/* Botão de login */
+/* Estilo para os botões (Login e Register) */
 button {
     width: 100%;
     padding: 12px;
@@ -61,8 +67,40 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* Efeito de hover para o botão de Login */
 button:hover {
     background-color: #45a049;
+}
+
+/* Estilo do botão de registrar */
+button.register {
+    background-color: #2196F3; /* Cor azul para o botão de registrar */
+}
+
+/* Efeito de hover para o botão de registrar */
+button.register:hover {
+    background-color: #1976D2; /* Cor azul mais escura ao passar o mouse */
+}
+
+/* Botão de alternância (Login/Registrar) */
+.toggle-container {
+    margin-top: 15px;
+}
+
+.toggle-btn {
+    width: 100%;  /* Garantir que o botão de alternância tenha a mesma largura */
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px;  /* Mesmo padding para garantir o mesmo tamanho */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #1976D2;
 }
 
 /* Mensagem de erro */
