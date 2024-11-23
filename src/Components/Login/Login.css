@@ -1,18 +1,23 @@
 /* login.css */
-body {
-    font-family: Arial, sans-serif;
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%; /* Garante que o body e o html ocupem toda a altura da viewport */
+    overflow: hidden; /* Remove qualquer scroll */
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
     background-color: #f0f0f0; /* Cor de fundo para contraste */
+    font-family: Arial, sans-serif;
 }
 
 .login-container {
     width: 100%;
-    max-width: 400px; /* Limita a largura máxima do container */
+    max-width: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
