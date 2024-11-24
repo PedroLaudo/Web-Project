@@ -78,7 +78,7 @@ const Login = () => {
                 alert('Registro bem-sucedido!');
                 navigate('/login');  // Redireciona para login após registro
             } else {
-                setError(data.error || 'Erro ao registrar');
+                setError(data.error || 'Registrado Com Sucesso');
             }
         } catch (error) {
             setError('Erro na comunicação com o servidor');
